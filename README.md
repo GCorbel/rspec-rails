@@ -8,9 +8,7 @@ They’re also specifications (or _specs,_ for short):
 detailed explanations of how the application is supposed to behave,
 expressed in plain English.
 
-Use **[`rspec-rails` 4.x][]** for Rails from 5.0 to 6.0.
-Use **[`rspec-rails` 3.x][]** for Rails earlier than 5.0.
-Use **[`rspec-rails` 1.x][]** for Rails 2.x.
+According to [RSpec Rails new versioning strategy][], use **[`rspec-rails` 5.x][]** for Rails 6.x, **[`rspec-rails` 4.x][]** for Rails 5.x, **[`rspec-rails` 3.x][]** for Rails earlier than 5.0 and **[`rspec-rails` 1.x][]** for Rails 2.x.
 
 [Build Status]: https://secure.travis-ci.org/rspec/rspec-rails.svg?branch=main
 [travis-ci]: https://travis-ci.org/rspec/rspec-rails
@@ -23,6 +21,8 @@ Use **[`rspec-rails` 1.x][]** for Rails 2.x.
 [`rspec-rails` 1.x]: https://github.com/dchelimsky/rspec-rails
 [`rspec-rails` 3.x]: https://github.com/rspec/rspec-rails/tree/3-9-maintenance
 [`rspec-rails` 4.x]: https://github.com/rspec/rspec-rails/tree/4-1-maintenance
+[`rspec-rails` 5.x]: https://github.com/rspec/rspec-rails/tree/5-0-maintenance
+[RSpec Rails new versioning strategy]: https://github.com/rspec/rspec-rails/blob/main/rfcs/versioning-strategy.md
 
 ## Installation
 
@@ -39,7 +39,7 @@ See the [`5-0-maintenance` branch on Github](https://github.com/rspec/rspec-rail
    end
 
    # Or, run against the main branch
-   # (requires main-branch versions of all related RSpec libraries)
+   # (requires main-branch versions of all related RSpec libraries)https://github.com/rspec/rspec-rails/tree/5-0-maintenance
    group :development, :test do
      %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
        gem lib, git: "https://github.com/rspec/#{lib}.git", branch: 'main'
